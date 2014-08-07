@@ -93,10 +93,10 @@ section:
 
 ```shell
 $ bundle exec kitchen login ubuntu-1204
-[vagrant@ubuntu...] $ cd dummy
-[vagrant@ubuntu...] $ bundle install
-[vagrant@ubuntu...] $ ...
-[vagrant@ubuntu...] $ bin/omnibus build dummy
+[vagrant@...] $ cd /omnibus/dummy
+[vagrant@...] $ bundle install --without=control_node
+[vagrant@...] $ ...
+[vagrant@...] $ bundle exec omnibus build dummy
 ```
 
 For a complete list of all commands and platforms, run `kitchen list` or
